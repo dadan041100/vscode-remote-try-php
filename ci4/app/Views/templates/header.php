@@ -54,7 +54,7 @@
             border-radius: 50%;
             width: 50px;
             height: auto;
-            object-fit: cover;
+            object-fit: auto;
             border: 5px solid #008CBA;
             margin-bottom: 10px;
         }
@@ -221,7 +221,8 @@
         </video>
 
         <div class="social-buttons">
-			
+			<img src="dadan.jpg" alt="Dadan" class="profile-picture">
+			<img src="<?= base_url('Images/dadan.jpg') ?>" alt="dadan">
             <a href="https://www.facebook.com/dadanramolete" class="social-button" target="_blank">
 				<img src="<?= base_url('Images/facebook.png') ?>" alt="facebook">
                 <img src="facebook.png" alt="Facebook Icon">
