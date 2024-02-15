@@ -221,8 +221,6 @@
         </video>
 
         <div class="social-buttons">
-			<img src="dadan.jpg" alt="Dadan" class="profile-picture">
-			<img src="<?= base_url('Images/dadan.jpg') ?>" alt="dadan">
             <a href="https://www.facebook.com/dadanramolete" class="social-button" target="_blank">
 				<img src="<?= base_url('Images/facebook.png') ?>" alt="facebook">
                 <img src="facebook.png" alt="Facebook Icon">
