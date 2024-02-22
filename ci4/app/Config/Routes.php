@@ -7,10 +7,17 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
+use App\Controllers\News;
 use App\Controllers\Pages;
 
 
 use App\Controllers\HomeController;
+
+$routes->get('news', [News::class, 'index']);
+$routes->get('news/new', [News::class, 'new']);
+$routes->post('news', [News::class, 'create']);    
+$routes->get('news/(:segment)', [News::class, 'show']);
+
 
 $routes->get('/', [HomeController::class, 'index']);
 $routes->get('pages', [Pages::class, 'index']);
