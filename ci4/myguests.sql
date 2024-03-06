@@ -52,7 +52,7 @@ INSERT INTO `myguests` (`id`, `name`, `email`, `website`, `comment`, `gender`, `
 --
 -- Indexes for table `myguests`
 --
-ALTER TABLE `myguests`
+ALTER TABLE `ddramolete_myguests`
   ADD PRIMARY KEY (`id`);
 
 --

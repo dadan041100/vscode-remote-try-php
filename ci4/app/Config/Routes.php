@@ -1,19 +1,15 @@
 <?php
 
-use CodeIgniter\Router\RouteCollection;
-
-/**
- * @var RouteCollection $routes
- */
-$routes->get('/', 'Home::index');
-
-use App\Controllers\News;
-use App\Controllers\Pages;
-use App\Controllers\Guests;
-
+use CodeIgniter\Config\BaseConfig;
+use CodeIgniter\Config\Services;
 use App\Controllers\HomeController;
+use App\Controllers\News;
+use App\Controllers\GuestController;
 
+ //*@var RouteCollection $routes
+//*/
 
+$routes->get('/', 'Home::index');
 $routes->get('guests', [Guests::class, 'index']);           
 $routes->get('guests/new', [Guests::class, 'new']); // Add this line
 $routes->post('guests', [Guests::class, 'create']); // Add this line

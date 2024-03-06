@@ -1,4 +1,4 @@
-<h2><?= esc($name) ?></h2>
+h2><?= esc($name) ?></h2>
 
 <?php if (! empty($guest) && is_array($guest)): ?>
 

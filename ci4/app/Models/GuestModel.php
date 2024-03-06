@@ -6,18 +6,7 @@ use CodeIgniter\Model;
 
 class GuestModel extends Model
 {
-    protected $table = 'myguests';
-
-	protected $allowedFields = ['name', 'email', 'website','comment','gender'];
-
-    public function getGuest($name = false)
-    {
-        if ($name === false) {
-            return $this->findAll();
-        }
-
-        return $this->where(['name' => $name])->first();
-    }
-
-
+    protected $table = 'guests';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['name', 'email'];
 }

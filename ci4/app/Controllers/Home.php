@@ -2,23 +2,19 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
-{
-    public function index(): string
-    {
-        return view('welcome_message');
-    }
-	public function index()
-	{
-    $this->load->view('header');
-    $this->load->view('home');
-    $this->load->view('footer');
-	}
+use CodeIgniter\Controller;
 
-	public function about()
-	{
-    $this->load->view('header');
-    $this->load->view('about');
-    $this->load->view('footer');
-	}
+class Home extends Controller
+{
+    public function index()
+    {
+        // Load views using CodeIgniter's view() method
+        return view('header') . view('home') . view('footer');
+    }
+
+    public function about()
+    {
+        // Load views using CodeIgniter's view() method
+        return view('header');
+    }
 }
